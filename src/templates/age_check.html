@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+</head>
+<body>
+    <h1>Age Verification</h1>
+
+    {% if person.age >= 18 %}
+        <p>{{ person.name }} is an adult.</p>
+    {% else %}
+        <p>{{ person.name }} is a minor.</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET 和 POST 请求示例</title>
+</head>
+<body>
+    <h1>GET 和 POST 请求示例</h1>
+
+    <h2>GET 请求示例</h2>
+    <p>通过点击链接，进行 GET 请求。</p>
+    <a href="/submit?name=John">点击此处发送 GET 请求 (查询名字为 John)</a>
+    
+    <br><br>
+
+    <h2>POST 请求示例</h2>
+    <form action="/submit" method="POST">
+        <label for="name">请输入你的名字：</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <button type="submit">提交 POST 请求</button>
+    </form>
+
+</body>
+</html>

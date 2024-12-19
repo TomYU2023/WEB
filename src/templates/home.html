@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask 静态文件示例</title>
+
+    <!-- 引用 CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>欢迎来到 Flask 示例页面</h1>
+
+    <!-- 图片展示 -->
+    <img src="{{ url_for('static', filename='img/美女.png') }}" alt="美女图片">
+
+    <!-- 按钮 -->
+    <button id="click-me">点击我</button>
+
+    <!-- 引用 JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
